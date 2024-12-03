@@ -41,12 +41,38 @@ public static int processF(String filepath){
     
     int count=0;
     for(int i=0;i< matrix.length;i++){    
-            if(isValidwithOneRemoval(matrix[i]) && hasDiff(matrix[i])){
+            if(isInOrder(matrix[i]) && hasDiff(matrix[i])){
+                count++;
+            }
+            else if(OneRemoval(matrix[i])){
                 count++;
             }
     }
     return count;
 }
+public static boolean OneRemoval(int[] row){
+    for(int i=0;i<row.length;i++){
+        int[] newseq=removei(i,row);
+        if(isInOrder(newseq) && hasDiff(newseq)){
+            return true;
+        }
+    }
+    return false;
+
+}
+
+public static int[] removei(int i, int[] row){
+    int n=row.length-1;
+    int[] newrow = new int[n];
+    for(int ind=0,k=0;ind<row.length;ind++){
+        if(ind==i){
+            continue;
+        }
+        newrow[k++]=row[ind];
+    }
+    return newrow;
+}
+
 public static boolean isInOrder(int[] row){
     boolean increasing = true;
     boolean decreasing = true;
@@ -64,14 +90,13 @@ public static boolean isInOrder(int[] row){
 }
 
 public static boolean hasDiff(int[] row){
-    boolean flag=true;
     for(int i=1;i<row.length;i++){
         int num = Math.abs(row[i]-row[i-1]);
         if(num<1 || num>3){
-            flag=false;
+            return false;
         }
     }
-    return flag;
+    return true;
 }
 public static void main(String args[]){
 String filepath = "../resources/d2.txt";
