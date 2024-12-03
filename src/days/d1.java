@@ -18,7 +18,7 @@ public class d1 {
                     l1.add(Integer.parseInt(numbers[0]));
                     l2.add(Integer.parseInt(numbers[1]));
                 }
-                System.out.println("Read numbers: " + numbers[0] + ", " + numbers[1]);
+               
                 line = reader.readLine();
 
             }
