@@ -1,6 +1,6 @@
 
 # aoc2024
 
-day 1 - ⭐⭐
-day 2 - ⭐⭐
-day 3 - ⭐
+day 1 - ⭐⭐ <br/>
+day 2 - ⭐⭐ <br/>
+day 3 - ⭐   <br/>
