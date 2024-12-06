@@ -1,9 +1,9 @@
 
 # aoc2024
 
-day 1 - ⭐⭐ <br/>
-day 2 - ⭐⭐ <br/>
-day 3 - ⭐⭐ <br/>
-day 4 - ⭐⭐ <br/>
-day 5 - ⭐⭐ <br/>
+day 1 - ⭐⭐ <br/> ez
+day 2 - ⭐⭐ <br/> ez
+day 3 - ⭐⭐ <br/> good ol regex
+day 4 - ⭐⭐ <br/> j basic graphs tbh
+day 5 - ⭐⭐ <br/> (used a hint tho)
 
