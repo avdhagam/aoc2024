@@ -48,7 +48,7 @@ public class d6p1 {
         int x = startx + moves[ind][0];
         int y = starty + moves[ind][1];
 
-        if(x<0 || x>=cols||y<0||y>=rows){
+        if(x<0 || x>=rows||y<0||y>=cols){
             break;
         }
 
